@@ -79,23 +79,38 @@ updateActiveNav();
 
 const slides = $$('.slide');
 let currentSlide = 0;
+const slideInterval = 5000; // 5 seconds per slide
 
-function rotateSlides() {
-    slides.forEach((slide, index) => {
-        slide.style.opacity = index === currentSlide ? '1' : '0';
+function showSlide(index) {
+    // Ensure index is within bounds
+    currentSlide = (index + slides.length) % slides.length;
+    
+    // Hide all slides
+    slides.forEach((slide) => {
+        slide.style.opacity = '0';
     });
     
-    currentSlide = (currentSlide + 1) % slides.length;
+    // Show current slide
+    slides[currentSlide].style.opacity = '1';
 }
 
-// Initialize slider with actual slides (if multiple)
-if (slides.length === 1) {
-    // Keep default behavior
-    rotateSlides();
+function nextSlide() {
+    showSlide(currentSlide + 1);
 }
 
-// Change slide every 4 seconds
-setInterval(rotateSlides, 4000);
+// Initialize slider
+if (slides.length > 0) {
+    showSlide(0);
+    
+    // Auto-rotate slides
+    setInterval(nextSlide, slideInterval);
+    
+    // Allow manual navigation (optional)
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowLeft') nextSlide();
+        if (e.key === 'ArrowRight') showSlide(currentSlide - 1);
+    });
+}
 
 // ─────────────────────────────────────────────────────────────
 // Animated Counter
@@ -185,7 +200,7 @@ const chatResponses = {
     },
     contact: {
         question: '📞 Contact Info',
-        answer: 'You can reach us at: 📱 +91 98765 43210 | ✉️ info@mskassociates.com | 🏢 1234 Accounting Lane, Finance City. Business hours: Mon-Fri 9AM-6PM, Sat 10AM-2PM'
+            answer: 'You can reach us at: 📱 +91 98765 43210 | ✉️ info@bmsrandco.com | 🏢 1234 Accounting Lane, Finance City. Business hours: Mon-Fri 9AM-6PM, Sat 10AM-2PM'
     },
     default: 'Thank you for your inquiry! How can we assist you further? Please select an option or type your question.'
 };
@@ -284,7 +299,7 @@ function sendMessage() {
         
         // Bot auto-reply after 1 second
         setTimeout(() => {
-            const autoReply = 'Thank you for your message! 📧 I\'ve provided you with basic information above. \n\nIf you need more detailed guidance or have specific requirements, please feel free to reach out to our team:\n\n📞 Call: +91 9493218465\n📧 Email: info@mskassociates.com\n💬 WhatsApp: Available 24/7\n\nWe\'re here to help!';
+            const autoReply = 'Thank you for your message! 📧 I\'ve provided you with basic information above. \n\nIf you need more detailed guidance or have specific requirements, please feel free to reach out to our team:\n\n📞 Call: +91 9493218465\n📧 Email: info@bmsrandco.com\n💬 WhatsApp: Available 24/7\n\nWe\'re here to help!';
             addChatMessage(autoReply, 'bot');
         }, 1000);
     }

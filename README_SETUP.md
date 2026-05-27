@@ -187,9 +187,9 @@ Edit these sections in `index.html`:
    - Search: "+91 87654 32109"
 
 5. **Email Addresses** (Multiple occurrences)
-   - Search: "info@mskassociates.com"
-   - Search: "audit@mskassociates.com"
-   - Search: "careers@mskassociates.com"
+   - Search: "info@bmsrandco.com"
+   - Search: "audit@bmsrandco.com"
+   - Search: "careers@bmsrandco.com"
 
 ### **Google Maps Embed**
 Edit the iFrame in `index.html` (search "Google Maps"):
@@ -379,7 +379,7 @@ Multiple locations - use Find & Replace (Ctrl+H)
 ## 📞 Contact & Support
 
 **Website:** www.mskassociates.com (to be configured)  
-**Email:** info@mskassociates.com  
+**Email:** info@bmsrandco.com  
 **Phone:** +91 98765 43210  
 **Address:** 1234 Accounting Lane, Finance City, State 560034
 

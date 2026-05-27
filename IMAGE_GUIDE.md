@@ -293,7 +293,7 @@ Keep images in `assets/images/` folder - this is the default setup
 |----------|-------------|------|
 | **Firm Name** | "MSK & Associates" | index.html |
 | **Phone Numbers** | "+91 98765 43210" | index.html |
-| **Email** | "info@mskassociates.com" | index.html |
+| **Email** | "info@bmsrandco.com" | index.html |
 | **Address** | "1234 Accounting Lane" | index.html |
 | **About Text** | "Who We Are" | index.html |
 | **Services** | "Audit & Assurance" | index.html |

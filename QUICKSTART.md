@@ -47,7 +47,7 @@
 | Company Name | everywhere | "MSK & Associates" |
 | Phone #1 | everywhere | "+91 98765 43210" |
 | Phone #2 | everywhere | "+91 87654 32109" |
-| Main Email | everywhere | "info@mskassociates.com" |
+| Main Email | everywhere | "info@bmsrandco.com" |
 | Office Address | Contact section | "1234 Accounting Lane" |
 | Business Hours | Contact section | "Monday - Friday: 9:00 AM" |
 | About Text | About section | "Who We Are" |
@@ -250,7 +250,7 @@ After customization:
 2. **Replace All Instances:**
    ```
    Replace "+91 98765 43210" with "[YOUR PHONE]"
-   Replace "info@mskassociates.com" with "[YOUR EMAIL]"
+   Replace "info@bmsrandco.com" with "[YOUR EMAIL]"
    Replace "MSK & Associates" with "[YOUR COMPANY]"
    Replace "1234 Accounting Lane" with "[YOUR ADDRESS]"
    ```
