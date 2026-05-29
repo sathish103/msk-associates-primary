@@ -1,5 +1,5 @@
 /* ============================================================
-   MSK & ASSOCIATES - Chartered Accountants
+   BMSR & Co - Chartered Accountants
    Professional CSS Stylesheet
    ============================================================ */
 
@@ -220,23 +220,67 @@ ul {
 
 /* Logo text split for two-line logo (large name + small descriptor) */
 .logo-text {
-    display: flex;
-    flex-direction: column;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.85rem;
     line-height: 1;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    flex-shrink: 0;
+    min-width: max-content;
+}
+
+.logo-line1,
+.logo-line2 {
+    white-space: nowrap;
 }
 .logo-line1 {
-    font-size: 20px;
-    font-weight: 800;
+    font-size: 1.95rem;
+    font-weight: 900;
     color: var(--primary-color);
-    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
 }
-.logo-line2 {
-    font-size: 11px;
+
+.logo-tagline {
+    display: inline-flex;
+    flex-direction: column;
+    margin-left: 0.6rem;
+    line-height: 1;
+}
+
+.logo-tagline .tag-line1 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+}
+
+.logo-tagline .tag-line2 {
+    font-size: 0.78rem;
     font-weight: 600;
     color: var(--text-light);
+    text-transform: lowercase;
+    letter-spacing: 0.12em;
     margin-top: -2px;
-    text-transform: none;
-    letter-spacing: 0.8px;
+}
+
+/* Decorative separator '|' after the main logo text */
+.logo-line1::after {
+    content: '|';
+    display: inline-block;
+    color: var(--text-light);
+    margin: 0 0.7rem;
+    font-weight: 700;
+    transform: translateY(-2px);
+    letter-spacing: normal;
+}
+
+/* Slight spacing adjustments to match reference */
+.logo-text {
+    gap: 0.5rem;
+    align-items: center;
 }
 
 .nav {
@@ -825,6 +869,10 @@ section {
     line-height: 1.8;
 }
 
+.about-grid.single-column {
+    grid-template-columns: 1fr;
+}
+
 .about-list {
     list-style: none;
     padding: 0;
@@ -861,16 +909,82 @@ section {
     margin-bottom: 4rem;
 }
 
+.service-category {
+    position: relative;
+}
+
 .category-title {
     font-size: 1.75rem;
     color: var(--primary-color);
-    margin-bottom: 2rem;
-    text-align: center;
-    display: flex;
+    margin-bottom: 0;
+    text-align: left;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 0.75rem;
 }
+
+.service-category-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+.service-scroll-controls {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.service-scroll-btn {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 1px solid var(--border-color);
+    background: var(--white);
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.service-scroll-btn:hover {
+    background: var(--secondary-color);
+    color: var(--white);
+    border-color: var(--secondary-color);
+}
+
+.service-scroll-btn:focus {
+    outline: 2px solid rgba(30, 95, 116, 0.3);
+    outline-offset: 2px;
+}
+
+/* Overlay side buttons (visible over grid) */
+.service-overlay-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.95);
+    border: 1px solid rgba(10,61,98,0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    z-index: 10;
+}
+
+.service-overlay-btn.left { left: 8px; }
+.service-overlay-btn.right { right: 8px; }
+
+.service-overlay-btn:hover { background: var(--secondary-color); color: #fff; border-color: var(--secondary-color); }
 
 .category-title i {
     font-size: 2rem;
@@ -882,9 +996,13 @@ section {
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
     margin-bottom: 2rem;
+}
+
+.services-grid {
+    position: relative;
 }
 
 .service-card {
@@ -961,7 +1079,44 @@ section {
 
 @media (max-width: 900px) {
     .services-grid {
-        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 1.5rem;
+        padding-bottom: 0.75rem;
+        scroll-snap-type: x proximity;
+    }
+
+    /* hide default scrollbar for a cleaner look */
+    .services-grid::-webkit-scrollbar { height: 8px; }
+    .services-grid::-webkit-scrollbar-thumb { background: rgba(10,61,98,0.12); border-radius: 8px; }
+
+    .service-card {
+        flex: 0 0 320px;
+        min-width: 320px;
+        scroll-snap-align: start;
+    }
+
+    .service-card:last-child {
+        margin-right: 1rem;
+    }
+
+    .service-category-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .service-scroll-controls {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .direct-contact-buttons {
+        flex-direction: column;
     }
 }
 
@@ -986,6 +1141,8 @@ section {
 }
 
 .team-member {
+    display: flex;
+    flex-direction: column;
     background: var(--white);
     border-radius: 15px;
     overflow: hidden;
@@ -1001,7 +1158,8 @@ section {
 
 .member-image {
     position: relative;
-    height: 350px;
+    height: 360px;
+    min-height: 360px;
     overflow: hidden;
     background: var(--light-bg);
 }
@@ -1010,6 +1168,7 @@ section {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center 25%;
     transition: var(--transition);
 }
 
@@ -1368,6 +1527,20 @@ section {
     flex: 1;
 }
 
+.contact-info-box .map-embed {
+    margin-top: 2rem;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+}
+
+.contact-info-box .map-embed iframe {
+    width: 100%;
+    height: 180px;
+    border: 0;
+    display: block;
+}
+
 .map-container {
     border-radius: 15px;
     overflow: hidden;
@@ -1591,16 +1764,17 @@ section {
 
 .chat-widget {
     position: fixed;
-    bottom: 30px;
-    right: 90px;
+    bottom: 90px;
+    right: 20px;
     width: 350px;
     max-height: 600px;
-    background: var(--white);
+    background: rgba(255, 255, 255, 0.98);
     border-radius: 15px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(10, 61, 98, 0.12);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.18);
     display: none;
     flex-direction: column;
-    z-index: 98;
+    z-index: 999;
     animation: slideUp 0.3s ease-out;
 }
 

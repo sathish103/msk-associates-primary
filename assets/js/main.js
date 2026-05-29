@@ -1,5 +1,5 @@
 /* ============================================================
-   MSK & ASSOCIATES - JavaScript Functionality
+   BMSR & Co - JavaScript Functionality
    ============================================================ */
 
 // Utility Functions
@@ -200,7 +200,7 @@ const chatResponses = {
     },
     contact: {
         question: '📞 Contact Info',
-            answer: 'You can reach us at: 📱 +91 98765 43210 | ✉️ info@bmsrandco.com | 🏢 1234 Accounting Lane, Finance City. Business hours: Mon-Fri 9AM-6PM, Sat 10AM-2PM'
+        answer: 'You can reach us at: 📱 +91 98765 43210 | ✉️ info@bmsrandco.com | 🏢 1234 Accounting Lane, Finance City. Business hours: Mon-Fri 9:00 AM - 6:00 PM, Sat 10:00 AM - 2:00 PM'
     },
     default: 'Thank you for your inquiry! How can we assist you further? Please select an option or type your question.'
 };
@@ -251,6 +251,36 @@ chatOptions.forEach(option => {
         if (optionsContainer) {
             optionsContainer.classList.add('hidden');
         }
+    });
+});
+
+// Service category scroll controls
+const serviceScrollButtons = document.querySelectorAll('.service-scroll-btn');
+serviceScrollButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const category = button.closest('.service-category');
+        const grid = category ? category.querySelector('.services-grid') : null;
+        if (!grid) return;
+
+        const scrollAmount = Math.min(grid.clientWidth * 0.75, 320);
+        if (button.classList.contains('prev')) {
+            grid.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+        } else {
+            grid.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        }
+    });
+});
+
+// Overlay side buttons (for grids that have inline overlay controls)
+const overlayButtons = document.querySelectorAll('.service-overlay-btn');
+overlayButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+        const category = btn.closest('.service-category');
+        const grid = category ? category.querySelector('.services-grid') : null;
+        if (!grid) return;
+        const amount = Math.min(grid.clientWidth * 0.75, 360);
+        if (btn.classList.contains('left')) grid.scrollBy({ left: -amount, behavior: 'smooth' });
+        else grid.scrollBy({ left: amount, behavior: 'smooth' });
     });
 });
 
@@ -445,7 +475,7 @@ if ('IntersectionObserver' in window) {
 // Initialize
 // ───────────────────────────────────────────────────────────
 
-console.log('MSK & Associates Website Initialized ✓');
+console.log('BMSR & Co Website Initialized ✓');
 console.log('All interactive features are now active!');
 
 // Send initial chat greeting
@@ -454,3 +484,4 @@ window.addEventListener('load', () => {
     // Uncomment the line below to enable auto-chat popup
     // setTimeout(() => { chatWidget.classList.add('open'); }, 2000);
 });
+
