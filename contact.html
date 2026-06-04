@@ -148,6 +148,36 @@
         </div>
     </footer>
     <a href="https://wa.me/919493218465" class="floating-whatsapp" target="_blank" title="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    
+    <!-- Floating Chat Widget -->
+    <div class="chat-widget" id="chatWidget">
+        <div class="chat-header">
+            <h4>Chat with us</h4>
+            <button id="chatClose" class="chat-close"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <div class="chat-message bot-message">
+                <p>Hello! 👋 How can we help you today?</p>
+                <small>We're available 24/7 to assist</small>
+            </div>
+        </div>
+        <div class="chat-options">
+            <button class="chat-option" data-option="audit">📊 Audit Services</button>
+            <button class="chat-option" data-option="tax">💰 Taxation Queries</button>
+            <button class="chat-option" data-option="corporate">🏢 Corporate Filings</button>
+            <button class="chat-option" data-option="contact">📞 Contact Info</button>
+        </div>
+        <div class="chat-input-box">
+            <input type="text" id="chatInput" placeholder="Type your message...">
+            <button id="chatSend"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <!-- Chat Toggle Button -->
+    <button class="chat-toggle" id="chatToggle" title="Open Chat">
+        <i class="fas fa-comments"></i>
+    </button>
+    
     <script src="assets/js/main.js"></script>
 </body>
 </html>

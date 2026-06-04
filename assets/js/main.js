@@ -88,10 +88,12 @@ function showSlide(index) {
     // Hide all slides
     slides.forEach((slide) => {
         slide.style.opacity = '0';
+        slide.classList.remove('active');
     });
     
     // Show current slide
     slides[currentSlide].style.opacity = '1';
+    slides[currentSlide].classList.add('active');
 }
 
 function nextSlide() {
