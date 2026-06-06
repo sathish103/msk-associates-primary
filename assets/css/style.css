@@ -1026,12 +1026,12 @@ ul {
     }
 
     .chat-widget {
-        width: calc(100vw - 40px);
-        max-width: 340px;
-        right: 20px;
+        display: none !important;
+        width: auto;
+        max-width: none;
+        right: auto;
         left: auto;
-        bottom: 90px;
-        max-height: calc(100vh - 140px);
+        bottom: auto;
     }
 }
 
@@ -2665,23 +2665,36 @@ section {
 
 @media (max-width: 600px) {
     .chat-widget {
-        display: none;
+        display: none !important;
+        width: auto;
+        right: auto;
+        left: auto;
     }
     
     .floating-whatsapp {
         bottom: 20px;
         right: auto;
         left: 20px;
+        width: 55px;
+        height: 55px;
     }
     
     .chat-toggle {
-        display: none !important;
+        display: flex !important;
+        position: fixed;
+        bottom: 90px;
+        right: auto;
+        left: 20px;
+        width: 55px;
+        height: 55px;
+        z-index: 98;
     }
     
     .scroll-top {
         display: none !important;
     }
 }
+
 
 /* ─────────────────────────────────────────────────────────────
    Scrollbar Styling
