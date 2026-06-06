@@ -3,6 +3,8 @@
    Professional CSS Stylesheet
    ============================================================ */
 
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@700;800&display=swap');
+
 /* ─────────────────────────────────────────────────────────────
    CSS Variables & Root Styles
    ───────────────────────────────────────────────────────────── */
@@ -95,6 +97,34 @@ p {
     color: var(--text-dark);
     margin-bottom: var(--spacing-sm);
 }
+
+/* Paragraph justification removed per request; paragraphs use default left alignment. */
+
+/* Apply justification only to main body paragraphs on About and Team pages */
+/* About page: intro and about content */
+.about .section-header p,
+.about .about-content p,
+.about .about-grid .about-content p,
+.about .info-card p {
+    text-align: justify;
+    text-justify: inter-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+
+/* Team page: leadership details and member bios */
+.team .section-header p,
+.team .leadership-grid .leader-details p,
+.team .member-bio p,
+.team .team-category .team-grid .member-bio p {
+    text-align: justify;
+    text-justify: inter-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+
 
 a {
     color: var(--accent-color);
@@ -372,11 +402,12 @@ ul {
     white-space: nowrap;
 }
 .logo-line1 {
+    font-family: 'Bodoni Moda', Georgia, serif;
     font-size: 1.95rem;
-    font-weight: 900;
+    font-weight: 700;
     color: var(--primary-color);
     text-transform: uppercase;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.12em;
 }
 
 .logo-tagline {
