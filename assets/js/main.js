@@ -367,6 +367,27 @@ if (careerResumeRemove) {
     });
 }
 
+// Set FormSubmit reply-to fields from the user email inputs
+const contactEmailInput = $('#con-email');
+const contactReplyTo = $('#contactReplyTo');
+if (contactEmailInput && contactReplyTo) {
+    const updateContactReplyTo = () => {
+        contactReplyTo.value = contactEmailInput.value;
+    };
+    contactEmailInput.addEventListener('input', updateContactReplyTo);
+    updateContactReplyTo();
+}
+
+const careerEmailInput = $('#career-email');
+const careerReplyTo = $('#careerReplyTo');
+if (careerEmailInput && careerReplyTo) {
+    const updateCareerReplyTo = () => {
+        careerReplyTo.value = careerEmailInput.value;
+    };
+    careerEmailInput.addEventListener('input', updateCareerReplyTo);
+    updateCareerReplyTo();
+}
+
 // ─────────────────────────────────────────────────────────────
 // Form Handling - Contact Form
 // ───────────────────────────────────────────────────────────
