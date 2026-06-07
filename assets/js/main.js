@@ -341,85 +341,8 @@ function sendMessage() {
 // Form Handling - Contact Form
 // ───────────────────────────────────────────────────────────
 
-const contactForm = $('#contactForm');
-
-if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        
-        const formData = new FormData(contactForm);
-        const data = Object.fromEntries(formData);
-        // Log form data (in real scenario, send to server)
-        console.log('Contact Form Submitted:', data);
-
-        // Build mailto to open user's email client addressed to info@bmsrandco.com
-        try {
-            const subject = `Website Contact: ${data.name || data.fullname || 'Visitor'}`;
-            let bodyLines = [];
-            for (const [k, v] of Object.entries(data)) {
-                if (v) bodyLines.push(`${k}: ${v}`);
-            }
-            bodyLines.push('');
-            bodyLines.push('-- This message was composed from the website contact form.');
-            const body = bodyLines.join('\n');
-            const mailto = `mailto:info@bmsrandco.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-            // Open mail client in a new window/tab
-            window.open(mailto, '_blank');
-        } catch (err) {
-            console.warn('Could not open mail client:', err);
-        }
-
-        // Show success message
-        alert(`Thank you, ${data.name || data.fullname || 'Visitor'}! Your message has been prepared in your email client and will be sent to info@bmsrandco.com.`);
-
-        // Reset form
-        contactForm.reset();
-
-        // Add chat notification
-        setTimeout(() => {
-            addChatMessage(`We prepared an email for you, ${data.name || data.fullname || 'Visitor'}! Our team will review it and contact you soon.`, 'bot');
-        }, 500);
-    });
-}
-
-// ─────────────────────────────────────────────────────────────
-// Form Handling - Career Application Form
-// ───────────────────────────────────────────────────────────
-
-const careerForm = $('#careerForm');
-
-if (careerForm) {
-    careerForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        
-        const formData = new FormData(careerForm);
-        const data = Object.fromEntries(formData);
-        // Log form data (in real scenario, send to server)
-        console.log('Career Application Submitted:', data);
-
-        // Build mailto to open user's email client addressed to info@bmsrandco.com
-        try {
-            const subject = `Career Application: ${data.fullname || data.name || 'Applicant'}`;
-            let bodyLines = [];
-            for (const [k, v] of Object.entries(data)) {
-                if (v) bodyLines.push(`${k}: ${v}`);
-            }
-            bodyLines.push('');
-            bodyLines.push('Note: If you have a resume/CV, please attach it to the email before sending.');
-            const body = bodyLines.join('\n');
-            const mailto = `mailto:info@bmsrandco.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-            window.open(mailto, '_blank');
-        } catch (err) {
-            console.warn('Could not open mail client:', err);
-        }
-
-        // Show success message
-        alert(`Thank you for applying, ${data.fullname || data.name || 'Applicant'}! An email to info@bmsrandco.com has been prepared; please attach your resume and send from your email client.`);
-
-        // Reset form
-        careerForm.reset();
-    });
-}
+// Contact and career forms now submit directly through FormSubmit using HTML form action attributes.
+// The JavaScript no longer intercepts the submit event so the service can process the POST normally.
 
 // ─────────────────────────────────────────────────────────────
 // Intersection Observer for Animations
