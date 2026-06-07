@@ -84,19 +84,27 @@
                         <li><i class="fas fa-check"></i> Strong technical growth opportunities</li>
                         <li><i class="fas fa-check"></i> Work with real clients and practical problems</li>
                     </ul>
-                    <p>We currently focus on attracting talented chartered accountants and qualified finance professionals. If you would like to join our team, send your resume to <a href="mailto:info@bmsrandco.com">info@bmsrandco.com</a>.</p>
+                    <p>We currently focus on attracting talented chartered accountants and qualified finance professionals. Use the form on the right to upload your resume and share your message; we will reach out when an opportunity matches your profile.</p>
                 </div>
                 <div class="career-application">
                     <h3>Stay connected</h3>
                     <p>Share your details and we will contact you when an opening matches your profile.</p>
-                    <form class="contact-form" id="careerForm" action="https://formsubmit.co/info@bmsrandco.com" method="POST">
+                    <form class="contact-form" id="careerForm" action="https://formsubmit.co/info@bmsrandco.com" method="POST" enctype="multipart/form-data">
                         <input type="hidden" name="_captcha" value="false">
                         <input type="hidden" name="_next" value="thank-you.html">
                         <div class="form-group"><label for="career-name">Full Name *</label><input type="text" id="career-name" name="fullname" required></div>
                         <div class="form-group"><label for="career-email">Email Address *</label><input type="email" id="career-email" name="email" required></div>
                         <div class="form-group"><label for="career-phone">Phone Number *</label><input type="tel" id="career-phone" name="phone" required></div>
+                        <div class="form-group file-upload-group">
+                            <label for="career-resume">Upload Resume (optional)</label>
+                            <input type="file" id="career-resume" name="resume" accept=".pdf,.doc,.docx">
+                            <div class="file-preview hidden" id="careerResumePreview">
+                                <span class="file-name" id="careerResumeName"></span>
+                                <button type="button" class="btn btn-secondary btn-sm file-remove-btn" id="careerResumeRemove">×</button>
+                            </div>
+                        </div>
                         <div class="form-group"><label for="career-message">Message</label><textarea id="career-message" name="message" rows="5"></textarea></div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <button type="submit" class="btn btn-primary">Submit Application</button>
                     </form>
                 </div>
             </div>

@@ -337,6 +337,36 @@ function sendMessage() {
     }
 }
 
+// Resume preview/remove support for career form
+const careerResumeInput = $('#career-resume');
+const careerResumePreview = $('#careerResumePreview');
+const careerResumeName = $('#careerResumeName');
+const careerResumeRemove = $('#careerResumeRemove');
+
+if (careerResumeInput) {
+    careerResumeInput.addEventListener('change', () => {
+        const file = careerResumeInput.files[0];
+        if (file) {
+            careerResumeName.textContent = file.name;
+            careerResumePreview.classList.remove('hidden');
+        } else {
+            careerResumePreview.classList.add('hidden');
+            careerResumeName.textContent = '';
+        }
+    });
+}
+
+if (careerResumeRemove) {
+    careerResumeRemove.addEventListener('click', () => {
+        if (careerResumeInput) {
+            careerResumeInput.value = '';
+            careerResumePreview.classList.add('hidden');
+            careerResumeName.textContent = '';
+            careerResumeInput.focus();
+        }
+    });
+}
+
 // ─────────────────────────────────────────────────────────────
 // Form Handling - Contact Form
 // ───────────────────────────────────────────────────────────
