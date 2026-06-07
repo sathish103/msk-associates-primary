@@ -1,4 +1,4 @@
-# 🎨 MSK & Associates - Image Placement & Customization Guide
+# 🎨 BMSR & Co - Image Placement & Customization Guide
 
 ## 📍 Image Placement Instructions
 
@@ -43,7 +43,7 @@ Create or gather these images with the specifications below:
 **Placement in Code:**
 ```html
 <!-- Line ~91 in index.html -->
-<img src="assets/images/logo.png" alt="MSK & Associates Logo" class="logo-img">
+<img src="assets/images/logo.png" alt="BMSR & Co Logo" class="logo-img">
 ```
 
 ---
@@ -111,7 +111,7 @@ Create or gather these images with the specifications below:
 **Placement in Code:**
 ```html
 <!-- Line ~258 in index.html -->
-<img src="assets/images/about-image.jpg" alt="MSK & Associates Office">
+<img src="assets/images/about-image.jpg" alt="BMSR & Co Office">
 ```
 
 ---
@@ -237,7 +237,7 @@ Add this in `<head>` section if not present:
 
 1. **Navigate to folder:**
    ```
-   E:\MSK & Associates\msk-associates-site\assets\images\
+   E:\BMSR & Co\bmsr-associates-site\assets\images\
    ```
 
 2. **Create "images" folder if it doesn't exist:**
@@ -274,7 +274,7 @@ Keep images in `assets/images/` folder - this is the default setup
 2. Upload images
 3. Update image URLs in HTML:
 ```html
-<img src="https://yourcdn.domain.com/logo.png" alt="MSK & Associates Logo">
+<img src="https://yourcdn.domain.com/logo.png" alt="BMSR & Co Logo">
 ```
 
 **Imgbb (Free Image Hosting):**
@@ -291,7 +291,7 @@ Keep images in `assets/images/` folder - this is the default setup
 
 | Category | Search Term | File |
 |----------|-------------|------|
-| **Firm Name** | "MSK & Associates" | index.html |
+| **Firm Name** | "BMSR & Co" | index.html |
 | **Phone Numbers** | "+91 98765 43210" | index.html |
 | **Email** | "info@bmsrandco.com" | index.html |
 | **Address** | "1234 Accounting Lane" | index.html |

@@ -1,6 +1,6 @@
-# MSK & Associates Chartered Accountants Website
+# BMSR & Co | Chartered Accountants Website
 
-This workspace contains a polished static website for **MSK & Associates Chartered Accountants**. It has been engineered to look and behave like a real‑world professional firm site, with full responsiveness on desktop and mobile. Features include:
+This workspace contains a polished static website for **BMSR & Co | Chartered Accountants**. It has been engineered to look and behave like a real‑world professional firm site, with full responsiveness on desktop and mobile. Features include:
 
 - Sticky header with anchor navigation and scroll‑spy highlighting
 - Hero banner slideshow with rotating captions
@@ -14,7 +14,7 @@ The codebase is intentionally simple HTML/CSS/JS so you can host it on any stati
 ## File structure
 
 ```
-msk-associates-site/
+bmsr-associates-site/
 ├── LICENSE
 ├── package.json
 ├── README.md
@@ -43,7 +43,7 @@ Enjoy building a professional static website – this template provides a strong
 ## Project Structure
 
 ```
-msk-associates-site
+bmsr-associates-site
 ├── src
 │   ├── index.html         # Main entry point of the website
 │   ├── about.html         # Background information about the firm
@@ -68,7 +68,7 @@ msk-associates-site
 1. **Clone the Repository**
    ```bash
    git clone <repository-url>
-   cd msk-associates-site
+   cd bmsr-associates-site
    ```
 
 2. **Install Dependencies**

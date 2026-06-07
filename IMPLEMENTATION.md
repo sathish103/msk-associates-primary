@@ -1,4 +1,4 @@
-# 🎉 MSK & Associates - Complete Website Implementation
+# 🎉 BMSR & Co - Complete Website Implementation
 
 ## Project Summary
 
@@ -169,7 +169,7 @@ Your website is **100% functional and ready to deploy immediately**. All code is
 
 ### **Step 1: View in Browser (Take 2 minutes)**
 ```
-1. Open: msk-associates-site/index.html
+1. Open: bmsr-associates-site/index.html
 2. In your file explorer
 3. Double-click index.html
 4. Website opens in default browser
@@ -178,7 +178,7 @@ Your website is **100% functional and ready to deploy immediately**. All code is
 
 ### **Step 2: Create Images Folder (Take 1 minute)**
 ```
-Navigate to: msk-associates-site/assets/
+Navigate to: bmsr-associates-site/assets/
 Create folder: images
 This is where you'll place your photos
 ```
@@ -237,7 +237,7 @@ Choose one option:
 ## 📋 File Organization
 
 ```
-msk-associates-site/
+bmsr-associates-site/
 ├── index.html                  ← Main website (OPEN THIS)
 ├── QUICKSTART.md              ← Quick start guide
 ├── README_SETUP.md            ← Full setup guide
@@ -470,7 +470,7 @@ Your website scores:
 
 ## 🎉 Summary
 
-You now have a **complete, professional, production-ready website** for MSK & Associates that includes:
+You now have a **complete, professional, production-ready website** for BMSR & Co that includes:
 
 ✅ All sections required (Home, About, Services, Team, Career, Contact)  
 ✅ All features requested (Chat, WhatsApp, Maps, Forms, Animations)  
@@ -498,4 +498,4 @@ For questions about:
 **Last Updated: March 2024**  
 **Version: 1.0**  
 
-**Thank you for using our website builder. Your MSK & Associates website is ready to launch! 🚀**
+**Thank you for using our website builder. Your BMSR & Co website is ready to launch! 🚀**

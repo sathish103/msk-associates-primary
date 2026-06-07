@@ -1,8 +1,8 @@
-# MSK & Associates – Chartered Accountants Website
+# BMSR & Co – Chartered Accountants Website
 
 ## 🎯 Project Overview
 
-A professional, fully responsive website for MSK & Associates, a Chartered Accountancy firm. Built with modern HTML5, CSS3, and vanilla JavaScript. Includes interactive features like animated counters, floating chat widget, WhatsApp integration, and smooth scroll animations.
+A professional, fully responsive website for BMSR & Co, a Chartered Accountancy firm. Built with modern HTML5, CSS3, and vanilla JavaScript. Includes interactive features like animated counters, floating chat widget, WhatsApp integration, and smooth scroll animations.
 
 ## 📁 Folder Structure
 
@@ -32,8 +32,9 @@ msk-associates-site/
 ## 🚀 Quick Start
 
 ### 1. **Setup Instructions**
-
 1. Clone or download the project folder
+```
+bmsr-associates-site/
 2. Open `index.html` in your web browser
 3. Website is ready to use and fully functional
 4. No build process or dependencies required (vanilla JS/CSS)
@@ -46,74 +47,23 @@ msk-associates-site/
 - Hamburger menu for mobile navigation
 - All sections adapt to screen size
 
-✅ **Interactive Elements**
-- Sticky header with smooth scrolling
-- Animated hero slideshow (4-second rotation)
-- Animated counter section (50+ clients, 12 years experience, etc.)
 - Scroll-spy active navigation highlighting
 - Floating WhatsApp button with animation
-- Floating chat widget with preset Q&A options
-- Scroll-to-top button (appears after 300px scroll)
-
-✅ **Professional Design**
-- Modern gradient color scheme (Navy #0b3d91 + Blue #1565d8)
-- Professional typography (Merriweather headings, Poppins body)
-- Smooth hover animations and transitions
 - Shadow effects and depth perception
 - Premium corporate styling suitable for CA firms
-
-✅ **Content Sections**
-- Home (Hero with CTA buttons)
-- About (Company description + values)
-- Services (4 categories: Audit, Taxation, Corporate, Traditional)
 - Team (2 member profiles with full bios)
 - Career (Job listings + application form)
-- Contact (Form, address, maps, direct buttons)
-
-✅ **Advanced Features**
-- Google Maps embed (location display)
-- Chat widget with auto-reply
-- Contact form validation
 - Career application form
-- Social media links (Facebook, LinkedIn, WhatsApp, Instagram)
 
 ---
 
 ## 🖼️ Image Placement Guide
-
-### **Logo Replacement**
-- **File:** `assets/images/logo.png`
-- **Dimensions:** 45px height (auto width to maintain aspect ratio)
-- **Format:** PNG with transparent background recommended
-- **Location Used:** Header navigation area
 - **Current:** Placeholder (blue background)
 - **Action:** Replace with your firm's actual logo
-
-### **Hero Banner Background**
-- **File:** `assets/images/hero-1.jpg`
-- **Dimensions:** 1920x600px recommended (or any 16:9 aspect ratio)
-- **Format:** JPG (compressed for web)
-- **Location Used:** Full-width hero section background
-- **Current:** Gradient overlay only
 - **Action:** Replace with professional office/workspace image
 - **Tip:** Use high-quality, professional photography with good lighting
-
-### **About Section Image**
-- **File:** `assets/images/about-image.jpg`
-- **Dimensions:** 600x400px or any 3:2 aspect ratio
-- **Format:** JPG
-- **Location Used:** Left side of "About Us" section
-- **Current:** Placeholder
 - **Action:** Company office photo, team photo, or workspace image
 - **Tip:** Keep professional and well-lit
-
-### **Team Member Profile Photos**
-- **File 1:** `assets/images/team-member-1.jpg` - CA Madhu Sudhan Reddy B
-- **File 2:** `assets/images/team-member-2.jpg` - CA Naveen JV
-- **Dimensions:** 400x400px (square recommended for profile style)
-- **Format:** JPG
-- **Location Used:** Team section cards
-- **Current:** Placeholder images
 - **Action:** Replace with actual professional headshots
 - **Tip:** Use professional headshots with:
   - Neutral background
@@ -121,14 +71,7 @@ msk-associates-site/
   - Good lighting
   - Clear face visibility
   - Consistent styling between photos
-
-### **Favicon**
-- **File:** `assets/images/favicon.ico`
-- **Dimensions:** 32x32px minimum
-- **Format:** ICO or PNG
-- **Location Used:** Browser tab icon
 - **Current:** Not set (browser default)
-- **Action:** Create favicon from your logo
 
 ---
 
@@ -145,14 +88,9 @@ Edit CSS variables in `assets/css/style.css` (lines 10-28):
     /* ... other colors ... */
 }
 ```
-
-**Recommended Color Combinations for CA Firms:**
-- Navy + Gold: Professional & trustworthy
 - Dark Blue + Teal: Modern & reliable
 - Charcoal + Blue: Corporate & conservative
 
-### **Typography**
-Currently using:
 - **Headings:** Merriweather (serif) - Professional, elegant
 - **Body Text:** Poppins (sans-serif) - Clean, readable
 
@@ -200,20 +138,12 @@ Edit the iFrame in `index.html` (search "Google Maps"):
 4. Copy the iFrame code
 5. Replace the existing iFrame in the HTML
 
-### **WhatsApp Integration**
-Replace WhatsApp numbers in:
-- Top contact bar
-- Floating WhatsApp button
 - Contact section
 - Footer
 
 Example: `https://wa.me/919876543210` (Replace number)
 
-### **Social Media Links**
-Edit footer social links (search for Facebook, LinkedIn, etc.) and replace:
-- Facebook URL
 - LinkedIn company page URL
-- Instagram handle
 
 ---
 
@@ -223,51 +153,26 @@ Edit footer social links (search for Facebook, LinkedIn, etc.) and replace:
 |--------|-------|------------|
 | Mobile Phone | < 600px | Hamburger menu |
 | Tablet | 600px - 900px | Hybrid/Hamburger |
-| Desktop | > 900px | Full menu |
 
 ---
 
 ## 🎨 Design Elements Explained
-
-### **Color Palette**
-- **Primary Color (#0b3d91):** Headers, main buttons, hero background
-- **Accent Color (#1565d8):** Links, highlights, secondary buttons
 - **Background (#f5f7fb):** Alternate section backgrounds (light blue-gray)
 - **Text (#2c3e50):** Body text (dark gray-blue)
-
-### **Typography Hierarchy**
-- **H1:** 48px - Hero title, page headers
-- **H2:** 32px - Major section headers
-- **H3:** 24px - Sub-sections, category titles
 - **Body:** 16px - Regular text
 - **Small:** 14px - Secondary text, captions
-
-### **Spacing System**
-- **Extra Small (xs):** 0.5rem - Small gaps
-- **Small (sm):** 1rem - Component padding
-- **Medium (md):** 1.5rem - Section padding
-- **Large (lg):** 2rem - Major spacing
 - **Extra Large (xl):** 3rem - Section gaps
 - **2XL (2xl):** 4rem - Large section separations
-
-### **Shadow Effects**
 - **Light Shadow:** 0 10px 35px rgba(0,0,0,0.1) - Card hover
-- **Dark Shadow:** 0 20px 60px rgba(0,0,0,0.15) - Deep elements
 
 ---
 
 ## 🔌 Third-Party Integrations
-
-### **Google Fonts**
 - Merriweather (Serif) - [View](https://fonts.google.com/specimen/Merriweather)
 - Poppins (Sans-serif) - [View](https://fonts.google.com/specimen/Poppins)
-
-### **Font Awesome Icons**
 - 6.4.0 - [View](https://fontawesome.com/icons)
 - Used for: Service icons, social media, contact info, UI elements
-
 ### **Google Maps**
-- Embedded iFrame for office location visualization
 
 ---
 
@@ -277,27 +182,14 @@ Edit footer social links (search for Facebook, LinkedIn, etc.) and replace:
 ✅ Firefox (Latest)
 ✅ Safari (Latest)
 ✅ Edge (Latest)
-⚠️ IE 11 (Limited support - ES6 may not work)
 
 ---
 
-## 📊 Performance Features
-
-- **Lightweight:** ~150KB HTML, ~80KB CSS, ~30KB JS (no frameworks)
-- **Fast Loading:** Minimal dependencies, optimized images
-- **Smooth Animations:** CSS transitions + requestAnimationFrame
-- **Lazy Loading:** Images load on demand
 - **Responsive:** Mobile-first design
-- **Accessibility:** Semantic HTML, proper heading hierarchy, alt text for images
 
 ---
 
-## 🔐 Security & Compliance
-
-- **Forms:** Client-side validation (implement server-side for production)
-- **HTTPS:** Use SSL certificate in production
 - **Privacy:** No sensitive data collection (contact forms are demos)
-- **GDPR:** Add privacy policy and terms of service links (footer provided)
 
 ---
 
@@ -325,7 +217,6 @@ Edit footer social links (search for Facebook, LinkedIn, etc.) and replace:
 1. Visit [Vercel](https://vercel.com)
 2. Import project from GitHub
 3. One-click deployment
-4. Auto SSL & CDN
 
 ---
 
@@ -341,7 +232,6 @@ Edit `index.html`, search "Team Section"
 Edit `index.html`, search "Career Section" → Job listings
 
 ### **To Update Contact Info:**
-Multiple locations - use Find & Replace (Ctrl+H)
 
 ---
 
@@ -362,15 +252,6 @@ Multiple locations - use Find & Replace (Ctrl+H)
 | Form Validation | Contact/Career forms | On submit |
 | Lazy Load Images | All images | On viewport entry |
 
-### **CSS Features Implemented**
-
-- **Grid Layout:** Responsive service cards, team members
-- **Flexbox:** Navigation, buttons, layouts
-- **CSS Variables:** Centralized color/spacing management
-- **Media Queries:** Mobile, tablet, desktop adaptations
-- **Animations:** Fade-in, slide-up, pulse effects
-- **Transitions:** Smooth hover effects
-- **Gradients:** Modern color gradients throughout
 - **Box Shadows:** Depth and elevation
 - **Transform:** Scaling, rotating, translating elements
 
@@ -379,43 +260,20 @@ Multiple locations - use Find & Replace (Ctrl+H)
 ## 📞 Contact & Support
 
 **Website:** www.mskassociates.com (to be configured)  
-**Email:** info@bmsrandco.com  
 **Phone:** +91 98765 43210  
 **Address:** 1234 Accounting Lane, Finance City, State 560034
 
 ---
 
-## 📄 License
 
-This project is provided as-is for MSK & Associates. All rights reserved.
+This project is provided as-is for BMSR & Co. All rights reserved.
 
----
-
-## ✅ Final Checklist Before Going Live
-
-- [ ] Update all company contact information
-- [ ] Replace all placeholder images with real photos
-- [ ] Update color scheme to match brand (optional)
-- [ ] Configure Google Maps with actual office location
-- [ ] Set up SSL certificate (HTTPS)
-- [ ] Test on mobile, tablet, desktop
-- [ ] Test all forms and buttons
-- [ ] Configure domain name
-- [ ] Set up email forwarding for contact forms
-- [ ] Add analytics (Google Analytics recommended)
 - [ ] Create robots.txt and sitemap.xml
-- [ ] Add privacy policy and terms of service pages
 - [ ] Test WhatsApp link functionality
 - [ ] Configure favicon
 
 ---
-
-## 🎓 Code Comments & Documentation
-
-All HTML, CSS, and JavaScript files include detailed comments explaining:
-- Section purposes
 - Component structure
-- CSS selectors and specificity
 - JavaScript function purposes
 - Event listeners and handlers
 
@@ -431,15 +289,13 @@ Consider adding:
 5. **Case Studies** - Recent project highlights
 6. **PDF Downloads** - Service brochures, whitepapers
 7. **Video Content** - About us video, service demos
-8. **Performance Analytics** - Google Analytics integration
 9. **Search Engine Optimization (SEO)** - Meta tags, structured data
 10. **Multi-language Support** - English, Hindi, etc.
 
 ---
 
-## 🙏 Thank You!
 
-Your MSK & Associates website is now ready to impress clients with its professional design and smooth functionality. Good luck with your business!
+Your BMSR & Co website is now ready to impress clients with its professional design and smooth functionality. Good luck with your business!
 
 ---
 

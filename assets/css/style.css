@@ -1117,6 +1117,19 @@ ul {
         font-size: 13px;
     }
     
+    .contact-info-box,
+    .contact-form-box {
+        padding: 1.35rem;
+    }
+
+    .contact-item {
+        margin-bottom: 1.5rem;
+    }
+
+    .contact-info-box .map-embed iframe {
+        height: 200px;
+    }
+    
     .counters {
         grid-template-columns: 1fr;
         position: relative;
@@ -2395,6 +2408,11 @@ section {
     
     .direct-contact-buttons {
         flex-direction: column;
+    }
+
+    .contact-info-box,
+    .contact-form-box {
+        padding: 1.75rem;
     }
 }
 

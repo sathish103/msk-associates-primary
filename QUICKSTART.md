@@ -1,4 +1,4 @@
-# ✅ MSK & Associates Website - Quick Start Checklist
+# ✅ BMSR & Co Website - Quick Start Checklist
 
 ## 🚀 Get Started in 5 Minutes
 
@@ -66,7 +66,7 @@
 
 **Create Image Folder:**
 1. Open File Explorer
-2. Navigate to: `msk-associates-site/assets/`
+2. Navigate to: `bmsr-associates-site/assets/`
 3. Create new folder named: `images` (if doesn't exist)
 
 **Add These 6 Images:**
@@ -251,7 +251,7 @@ After customization:
    ```
    Replace "+91 98765 43210" with "[YOUR PHONE]"
    Replace "info@bmsrandco.com" with "[YOUR EMAIL]"
-   Replace "MSK & Associates" with "[YOUR COMPANY]"
+   Replace "BMSR & Co" with "[YOUR COMPANY]"
    Replace "1234 Accounting Lane" with "[YOUR ADDRESS]"
    ```
 
@@ -264,17 +264,17 @@ After customization:
 ### **Option 1: Netlify (5 minutes, FREE)**
 1. Go to https://netlify.com
 2. Click "Drop files here to deploy"
-3. Drag entire `msk-associates-site` folder
+3. Drag entire `bmsr-associates-site` folder
 4. Done! You get a live link
 5. Later: Connect domain for professional URL
 
 ### **Option 2: GitHub Pages (10 minutes, FREE)**
 1. Create GitHub account: https://github.com
-2. Create new repository: "msk-associates-site"
+2. Create new repository: "bmsr-associates-site"
 3. Upload entire folder to GitHub
 4. Go to Settings → Pages
 5. Enable GitHub Pages from "main" branch
-6. Your site is now live at: `username.github.io/msk-associates-site`
+6. Your site is now live at: `username.github.io/bmsr-associates-site`
 
 ### **Option 3: Traditional Hosting**
 1. Buy hosting + domain from GoDaddy, Bluehost, HostGator, etc.
